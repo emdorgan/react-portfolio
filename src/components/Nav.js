@@ -1,7 +1,10 @@
 import React from "react";
 
-export default function Nav(){
+export default function Nav({ currentPage, handlePageChange }){
     return(
-        <nav>nav here</nav>
+        <nav>
+            <div>
+            </div>
+        </nav>
     )
 }

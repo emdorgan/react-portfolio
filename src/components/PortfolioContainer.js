@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import About from './pages/About';
 import Home from './pages/Home';
-import Project from './pages/Project';
+import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact';
 
 
@@ -21,7 +21,7 @@ export default function PortfolioContainer() {
             return <Contact />;
         }
         else {
-            return <Project />;
+            return <Portfolio />;
         }
     }
 
@@ -29,7 +29,7 @@ export default function PortfolioContainer() {
 
     return (
         <div>
-            <Header />
+            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer/>
         </div>
