@@ -1,4 +1,5 @@
 import React from "react";
+import {FaArrowDown} from 'react-icons/fa';
 
 export default function Home({handlePageChange}){
     return(
@@ -6,7 +7,7 @@ export default function Home({handlePageChange}){
             <div className="landing-text">
                 <h2>I'm Emily (she/her) and I'm a Full Stack Web Developer</h2>
                 <a href = "#portfolio" onClick={() => handlePageChange('Portfolio')}> 
-                    See my Work
+                    See my Work <FaArrowDown />
                 </a>
             </div>
         </section>
