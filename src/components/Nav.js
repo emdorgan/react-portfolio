@@ -9,7 +9,7 @@ export default function Nav({ currentPage, handlePageChange }){
                     <a 
                         href = "#portfolio" 
                         onClick={() => handlePageChange('Portfolio')}
-                        className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+                        className={currentPage === 'Portfolio' ? 'nav-link custom-active' : 'nav-link'}
                     >
                         Projects
                     </a>
@@ -18,7 +18,7 @@ export default function Nav({ currentPage, handlePageChange }){
                     <a 
                         href = "#contact" 
                         onClick={() => handlePageChange('Contact')}
-                        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                        className={currentPage === 'Contact' ? 'nav-link custom-active' : 'nav-link'}
                     >
                         Contact Me
                     </a>
@@ -27,7 +27,7 @@ export default function Nav({ currentPage, handlePageChange }){
                     <a 
                         href = "#about" 
                         onClick={() => handlePageChange('About')}
-                        className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+                        className={currentPage === 'About' ? 'nav-link custom-active' : 'nav-link'}
                     >
                         About Me
                     </a>

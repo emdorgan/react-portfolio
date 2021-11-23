@@ -1,5 +1,6 @@
 :root {
-  --mainSiteColor: rgb(62, 74, 136); /* Learned to avoid using saturated colors on dark themes */
+  --mainSiteColor: #3e4a88; /* Learned to avoid using saturated colors on dark themes */
+  --secondaryColor: #be9299;
 }
 
 *,
@@ -27,9 +28,8 @@ body{
   font-size: 2em;
 }
 
-/* my portfolio will always have some variation of white, blue, pink because those are trans colors */
 .nav-custom a:hover{
-  color: pink;
+  color: pink
 }
 .my-name{
   font-size: 1.5em;
@@ -45,10 +45,6 @@ body{
   width: 152px;
   border-radius: 50%;
   margin-bottom: 5px;
-}
-
-.active {
-  text-decoration-line: underline;
 }
 
 section {
@@ -86,7 +82,7 @@ section h2 {
   width: fit-content;
 }
 .landing-text p:hover{
-  background-color: rgb(190, 146, 153);
+  background-color: pink;
 }
 
 .landing-text a {
@@ -165,6 +161,18 @@ section article {
   max-height: 300px;
 }
 
+/* .custom-active, .custom-active:visited, .custom-active:active, .custom-active:focus {
+  color: blue;
+} */
+
+.nav-custom .custom-active, 
+.nav-custom .custom-active:focus, 
+.nav-custom .custom-active:link,
+.nav-custom .custom-active:visited,
+.nav-custom .custom-active:active
+ {
+  color: pink;
+}
 
 @media only screen and (max-width: 990px){
   .profile {
