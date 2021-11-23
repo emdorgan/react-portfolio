@@ -22,8 +22,8 @@ export default function Nav({ currentPage, handlePageChange }){
     }
 
     return(
-        <nav className="" id="navbarNav">
-            <FaBars onClick={toggleDropdown} />
+        <nav id="navbarNav">
+            <FaBars className="toggler" onClick={toggleDropdown} />
             {dropdown ? (<ul className="navbar-nav custom-align">
                 <li className="nav-item p-1">
                     <a 

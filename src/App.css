@@ -32,6 +32,11 @@
 
 .custom-align{
   flex-grow: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: var(--mainSiteColor);
+  padding: 0px 10px 10px 10px;
 }
 
 .profile {
@@ -39,6 +44,17 @@
   width: 152px;
   border-radius: 50%;
   margin-bottom: 5px;
+}
+
+.toggler {
+  font-size: 2em;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+nav {
+  width: 30%;
 }
 
 section {
@@ -190,12 +206,14 @@ section article {
   }
 }
 
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 492px){
   
   .profile {
     display: none;
   }
-
+  .toggler {
+    font-size: 1.5em;
+  }
   .my-name{
     font-size: 1.2em;
   }
