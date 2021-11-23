@@ -2,6 +2,8 @@ import React from "react";
 import Nav from './Nav';
 import profilePic from './images/profile.jpg'
 
+// Header component which contains my name, profile (which link to the home page) and includes a Nav component.
+// The header recieves the currentPage and handlePageChange state and passes them along to the Nav component
 export default function Header({ currentPage, handlePageChange }){
     return(
         <header className="navbar navbar-expand-lg text-white fixed-top nav-custom">

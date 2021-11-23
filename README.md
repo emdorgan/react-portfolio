@@ -6,7 +6,7 @@ I'm picking the design I liked the most and making the portfolio in React.
 
 * Make the dropdown menu only appear on smaller size (using state? is there a onscreenresize?)
 * Make it so when I click the nav links in the dropdown menu, it toggles it
-* Build the Footer component
+* Make footer appear at the bottom
 * Make a contact form for the contact page
 
 ## Deployed Link

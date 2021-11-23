@@ -106,12 +106,6 @@ section article {
   padding-left: 10px;
 }
 
-/* .portfolio-cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-} */
-
 .custom-card {
   background-color: rgb(44, 44, 44);
   border: 2px solid var(--mainSiteColor);
@@ -179,6 +173,20 @@ section article {
 .nav-custom .custom-active:active
  {
   color: pink;
+}
+
+footer {
+  float: bottom;
+  text-align: center;
+  font-size: 1.5em;
+  color:var(--mainSiteColor)
+}
+footer a {
+  padding-left: 10px;
+  color:var(--mainSiteColor)
+}
+footer a:hover {
+  color:rgb(113, 137, 180);
 }
 
 @media only screen and (max-width: 990px){
