@@ -49,10 +49,6 @@ section {
   margin-right: 2%;
 }
 
-#portfolio {
-  height: 200vh;
-}
-
 section h2 {
   border-bottom: 1px solid white;
   padding-left: 2%;
@@ -83,18 +79,22 @@ section h2 {
   color: white;
 }
 
-
+.custom-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 
 section article {
   font-size: 1.2em;
   padding-left: 10px;
 }
 
-.portfolio-cards {
+/* .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-}
+} */
 
 .custom-card {
   background-color: rgb(44, 44, 44);

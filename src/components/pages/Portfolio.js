@@ -53,11 +53,16 @@ const projects = [
     }
 ]
 
+// iterates through the array and passes down the values to be rendered by the project component
 export default function Portfolio(){
     return(
         <section id="portfolio" className="container-fluid">
             <h2>My Work</h2>
-            {console.log(projects)}
+            <div className="custom-flex">
+                {projects.map((item, i) =>(
+                    <Project project = {item} key = {i} />
+                ))}
+            </div>
         </section>
     )
 }
