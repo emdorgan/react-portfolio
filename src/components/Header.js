@@ -3,7 +3,7 @@ import Nav from './Nav';
 
 export default function Header({ currentPage, handlePageChange }){
     return(
-        <header>
+        <header className="navbar navbar-expand-lg text-white fixed-top nav-custom">
             <div>
                 <a href="#home" onClick={() => handlePageChange('Home')}>
                     <h1>Emily Dorgan</h1>

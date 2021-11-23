@@ -1,5 +1,217 @@
+:root {
+  --mainSiteColor: rgb(62, 74, 136); /* Learned to avoid using saturated colors on dark themes */
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* This was the recommended 'shade' of dark for dark mode */
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #121212;
+}
+
+.nav-custom{
+  background-color: var(--mainSiteColor);
+  font-size: 1.5em;
+}
+
+.nav-custom a, .nav-custom a:visited {
+  color: white;
+}
+.custom-hamburger {
+  color: white;
+  font-size: 2em;
+}
+
+/* my portfolio will always have some variation of white, blue, pink because those are trans colors */
+.nav-custom a:hover{
+  color: pink;
+}
+.my-name{
+  font-size: 1.5em;
+  padding-left: 30px;
+}
+
+.custom-align{
+  flex-grow: 0;
+}
+
+.profile {
+  height: 152px;
+  width: 152px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+section {
+  color: white;
+  height: 100vh;
+  padding-top:  190px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#portfolio {
+  height: 200vh;
+}
+
+section h2 {
+  border-bottom: 1px solid white;
+  padding-left: 2%;
+  padding-bottom: 10px;
+}
+
+#landing-page h2{
+  border: none;
+}
+
+.landing-text { 
+  margin: 10% 20% 20% 25%;
+}
+
+.landing-text p {
+  font-size: 1.4em;
+  margin-left: 30px;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: fit-content;
+}
+.landing-text p:hover{
+  background-color: rgb(190, 146, 153);
+}
+
+.landing-text a {
+  text-decoration: none;
+  color: white;
+}
+
+section article {
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.custom-card {
+  background-color: rgb(44, 44, 44);
+  border: 2px solid var(--mainSiteColor);
+  margin: 20px;
+  width: 24rem;
+}
+.custom-card-body {
+  text-align: center;
+}
+
+.custom-card img {
+  opacity:0.8;
+}
+
+.custom-btn {
+  background-color:var(--mainSiteColor);
+  border-color: var(--mainSiteColor);
+  margin: 5px;
+}
+
+.custom-btn:hover {
+  background-color:rgb(80, 106, 155);
+  border-color: rgb(80, 106, 155);
+}
+
+.contact-me a{
+  text-decoration: none;
+  color:rgb(167, 198, 255);
+}
+.contact-me a:hover {
+  color:rgb(113, 137, 180);
+}
+.contact-me i {
+  padding: 5px;
+}
+.about-me p {
+  text-indent: 50px;
+  padding: 30px 2% 30px 2%;
+}
+
+.picture-album {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.picture-frame {
+  max-width: 400px;
+  max-height: 300px;
+  transform: rotate(-5deg);
+}
+
+.picture-frame img {
+  width:100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+
+@media only screen and (max-width: 990px){
+  .profile {
+    height: 100px;
+    width: 100px;
+  }
+
+  section {
+    padding-top:  140px;
+
+  }
+  .picture-frame img {
+    width:100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 150px;
+  }
+  #portfolio {
+    height: 250vh;
+  }
+
+  .custom-card {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 426px){
+  
+  .profile {
+    display: none;
+  }
+
+  .my-name{
+    font-size: 1.2em;
+  }
+
+  section {
+    padding-top:  80px;
+
+  }
+  .custom-card {
+    width: 16rem;
+  }
+
+  #portfolio {
+    height: 310vh;
+  }
+  .landing-text { 
+    margin: 10% 5% 20% 5%;
+  }
+  #about-me {
+    height: 130vh;
+  }
 }
