@@ -1,7 +1,14 @@
 import React from "react";
 
-export default function Home(){
+export default function Home({handlePageChange}){
     return(
-        <h2>Home page here</h2>
+        <section id="landing-page" className ="container-fluid">
+            <div className="landing-text">
+                <h2>I'm Emily (she/her) and I'm a Full Stack Web Developer</h2>
+                <a href = "#portfolio" onClick={() => handlePageChange('Portfolio')}> 
+                    See my Work
+                </a>
+            </div>
+        </section>
     )
 }

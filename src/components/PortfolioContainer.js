@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact';
 
+// This allows me to access the body tag and set it's styling.
 document.body.style = "font-family: Georgia, 'Times New Roman', Times, serif; background-color: #121212;";
 
 export default function PortfolioContainer() {
@@ -13,7 +14,7 @@ export default function PortfolioContainer() {
 
     const renderPage = () => {
         if(currentPage === 'Home') {
-            return <Home />;
+            return <Home handlePageChange={handlePageChange} />;
         }
         if(currentPage === 'About') {
             return <About />;

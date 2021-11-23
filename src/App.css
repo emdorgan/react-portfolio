@@ -9,12 +9,6 @@
   box-sizing: border-box;
 }
 
-/* This was the recommended 'shade' of dark for dark mode */
-body{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #121212;
-}
-
 .nav-custom{
   background-color: var(--mainSiteColor);
   font-size: 1.5em;
@@ -49,7 +43,7 @@ body{
 
 section {
   color: white;
-  height: 100vh;
+  height: 90vh;
   padding-top:  190px;
   margin-left: 2%;
   margin-right: 2%;
@@ -73,22 +67,23 @@ section h2 {
   margin: 10% 20% 20% 25%;
 }
 
-.landing-text p {
+.landing-text a {
   font-size: 1.4em;
   margin-left: 30px;
   padding: 5px 10px 5px 10px;
   border: 2px solid white;
   border-radius: 10px;
   width: fit-content;
+  text-decoration-line: none;
+  color: white;
 }
-.landing-text p:hover{
-  background-color: pink;
-}
-
-.landing-text a {
+.landing-text a:hover{
+  background-color: var(--secondaryColor); 
   text-decoration: none;
   color: white;
 }
+
+
 
 section article {
   font-size: 1.2em;
@@ -160,10 +155,6 @@ section article {
   max-width: 400px;
   max-height: 300px;
 }
-
-/* .custom-active, .custom-active:visited, .custom-active:active, .custom-active:focus {
-  color: blue;
-} */
 
 .nav-custom .custom-active, 
 .nav-custom .custom-active:focus, 

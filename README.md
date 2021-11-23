@@ -12,8 +12,6 @@ I'm picking the design I liked the most and making the portfolio in React.
 * Build the About component
 * Build the Contact component
 * Build the Footer component
-* Figure out how to add a link to a PDF
-* Figure out if the bootstrap stuff works now
 
 ## Deployed Link
 
