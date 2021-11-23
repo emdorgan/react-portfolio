@@ -4,12 +4,9 @@ I'm picking the design I liked the most and making the portfolio in React.
 
 ## To-do list
 
-* Figure out how to link Fontawesome icons
 * Figure out if the nav bar turning into a dropdown works
-* Build the Project component
-* Build the Portfolio (that holds the projects) component
-* Build the Contact component
 * Build the Footer component
+* Make a contact form for the contact page
 
 ## Deployed Link
 
