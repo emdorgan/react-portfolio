@@ -47,6 +47,10 @@ body{
   margin-bottom: 5px;
 }
 
+.active {
+  text-decoration-line: underline;
+}
+
 section {
   color: white;
   height: 100vh;
