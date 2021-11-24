@@ -1,6 +1,7 @@
 import React from "react";
 import {FaArrowDown} from 'react-icons/fa';
 
+// Renders the landing page
 export default function Home({handlePageChange}){
     return(
         <section id="landing-page" className ="container-fluid">

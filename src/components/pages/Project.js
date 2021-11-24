@@ -1,5 +1,6 @@
 import React from "react";
 
+// Card template with data filled in for each project in the projects array
 export default function Project(props){
     return(
         <article className = "portfolio-cards">

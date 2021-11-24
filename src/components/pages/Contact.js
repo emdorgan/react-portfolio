@@ -6,19 +6,19 @@ import {FaLinkedin} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
 
 export default function Contact(){
-
+    // useState for the 3 input fields + an error message state
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [text, setText] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    // if the user cursor leaves the field without entering anything, set error message to 'required field!'
+    // if the user cursor leaves the field without entering anything, set error message state
     const leaveNotification = ({target}) => {
         if(target.value === ""){
-            setErrorMessage("required field!")
+            setErrorMessage("name, email and text are required fields!")
         }
     }
-
+    // updates the state of each field as we go
     const handleInputChange = (e) => {
         setErrorMessage('');
         const { target } = e;
@@ -33,23 +33,24 @@ export default function Contact(){
             setText(inputValue);
         }
       };
-
+        // function to be executed when form is submitted, checks for valid email and SOME sort 
       const handleFormSubmit = (e) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
     
-        // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+        // First we check to see if the email is not valid or if the name is empty. If so we set an error message to be displayed on the page.
         if (!validateEmail(email) || !name) {
           setErrorMessage('Email or name is invalid');
           return;
         }
-    
-        // If everything goes according to plan, we want to clear out the input after a successful registration.
+        // This is where an API call would be made to store information somewhere. But for now, the form doesn't actually store data.
+
+        // If there were no validation issues, we want to clear out the input
         setName('');
         setEmail('');
         setText('');
       };
-
+        // Render the page
     return(
         <section id="contact-me" className="container-fluid">
             <h2>Contact Me</h2>

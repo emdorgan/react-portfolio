@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 // This allows me to access the body tag and set it's styling.
 document.body.style = "font-family: Georgia, 'Times New Roman', Times, serif; background-color: #121212;";
 
+// Renders the contents of the page conditionally using useState. About page is rendered by default as per request in the assignment
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('About');
 

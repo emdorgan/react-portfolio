@@ -1,6 +1,7 @@
 import React from "react";
 import {FaGithub, FaEnvelope, FaLinkedin, FaTwitter, FaHeart} from 'react-icons/fa';
 
+// renders the footer to appear on each page at the bottom of the document
 export default function Footer(){
     return(
         <footer>

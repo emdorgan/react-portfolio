@@ -7,10 +7,9 @@ import {FaBars} from 'react-icons/fa'
 export default function Nav({ currentPage, handlePageChange }){
 
     const [dropdown, setDropdown] = useState(false);
-    // const [resize, setResize] = useState(true);
 
 
-
+    // if toggler is on, turn it off; if it's off, turn it on.
     const toggleDropdown = () => {
         if(dropdown){
             setDropdown(false);
@@ -18,7 +17,9 @@ export default function Nav({ currentPage, handlePageChange }){
             setDropdown(true);
         }
     }
-
+    // If the browser width exceeds 990px, render the 4 links horizontally without a 3-bars icon
+    // Otherwise, hide the 4 links (using a state set to false) and render a button which, when clicked,
+    // shows the 4 links vertically.
     if(window.outerWidth > 990){
         return (<ul className="navbar-nav custom-align">
                     <li className="nav-item p-1">
