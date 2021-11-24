@@ -54,7 +54,7 @@ export default function Contact(){
                     <li>Linkedin: <a href="https://www.linkedin.com/in/emily-dorgan/"><FaLinkedin /> https://www.linkedin.com/in/emily-dorgan/</a></li>
                     <li>Instagram: <a href="https://twitter.com/PrezMoocow"><FaTwitter/> https://twitter.com/PrezMoocow</a></li>
                 </ul>
-                <p>Alternatively, use this form</p>
+                <p>Alternatively, use this form:</p>
             </article>
             <div>
                 <form className="form custom-form">

@@ -30,14 +30,7 @@
   padding-left: 30px;
 }
 
-.custom-align{
-  flex-grow: 0;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  background-color: var(--mainSiteColor);
-  padding: 0px 10px 10px 10px;
-}
+
 
 .profile {
   height: 152px;
@@ -59,7 +52,6 @@ nav {
 
 section {
   color: white;
-  height: 90vh;
   padding-top:  190px;
   margin-left: 2%;
   margin-right: 2%;
@@ -138,9 +130,6 @@ section article {
 .contact-me a:hover {
   color:rgb(113, 137, 180);
 }
-.contact-me i {
-  padding: 5px;
-}
 
 .custom-form {
   display: flex;
@@ -193,7 +182,8 @@ section article {
 }
 
 footer {
-  float: bottom;
+  margin-bottom: 0;
+  margin-top: 20px;
   text-align: center;
   font-size: 1.5em;
   color:var(--mainSiteColor)
@@ -211,7 +201,14 @@ footer a:hover {
     height: 100px;
     width: 100px;
   }
-
+  .custom-align{
+    flex-grow: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: var(--mainSiteColor);
+    padding: 0px 10px 10px 10px;
+  }
   section {
     padding-top:  140px;
 
@@ -221,9 +218,6 @@ footer a:hover {
     height: auto;
     max-width: 200px;
     max-height: 150px;
-  }
-  #portfolio {
-    height: 250vh;
   }
 
   .custom-card {
@@ -251,13 +245,7 @@ footer a:hover {
     width: 16rem;
   }
 
-  #portfolio {
-    height: 310vh;
-  }
   .landing-text { 
     margin: 10% 5% 20% 5%;
-  }
-  #about-me {
-    height: 130vh;
   }
 }

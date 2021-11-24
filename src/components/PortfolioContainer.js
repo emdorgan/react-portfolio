@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 document.body.style = "font-family: Georgia, 'Times New Roman', Times, serif; background-color: #121212;";
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
         if(currentPage === 'Home') {
@@ -33,7 +33,6 @@ export default function PortfolioContainer() {
         <div className="app">
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
-            <Footer/>
         </div>
     )
 }

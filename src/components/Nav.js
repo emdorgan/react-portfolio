@@ -7,9 +7,11 @@ import {FaBars} from 'react-icons/fa'
 export default function Nav({ currentPage, handlePageChange }){
 
     const [dropdown, setDropdown] = useState(false);
-    
+    // const [resize, setResize] = useState(true);
+
+
+
     const toggleDropdown = () => {
-        console.log(dropdown)
         if(dropdown){
             setDropdown(false);
         } else{
@@ -17,45 +19,82 @@ export default function Nav({ currentPage, handlePageChange }){
         }
     }
 
+    if(window.outerWidth > 990){
+        return (<ul className="navbar-nav custom-align">
+                    <li className="nav-item p-1">
+                        <a 
+                            href = "#portfolio" 
+                            onClick={() => handlePageChange('Portfolio')}
+                            className={currentPage === 'Portfolio' ? 'nav-link custom-active' : 'nav-link'}
+                        >
+                            Projects
+                        </a>
+                    </li>
+                    <li className="nav-item p-1">
+                        <a 
+                            href = "#contact" 
+                            onClick={() => handlePageChange('Contact')}
+                            className={currentPage === 'Contact' ? 'nav-link custom-active' : 'nav-link'}
+                        >
+                            Contact Me
+                        </a>
+                    </li>
+                    <li className="nav-item p-1">
+                        <a 
+                            href = "#about" 
+                            onClick={() => handlePageChange('About')}
+                            className={currentPage === 'About' ? 'nav-link custom-active' : 'nav-link'}
+                        >
+                            About Me
+                        </a>
+                    </li>
+                    <li className="nav-item p-1">
+                        <a className="nav-link" href ={resume} target="_blank" rel="noreferrer">Resume</a>
+                    </li>
+                </ul>
+        )
+    } else{
     return(
         <nav id="navbarNav">
             <FaBars className="toggler" onClick={toggleDropdown} />
-            {dropdown ? (<ul className="navbar-nav custom-align">
-                <li className="nav-item p-1">
-                    <a 
-                        href = "#portfolio" 
-                        onClick={() => handlePageChange('Portfolio')}
-                        className={currentPage === 'Portfolio' ? 'nav-link custom-active' : 'nav-link'}
-                    >
-                        Projects
-                    </a>
-                </li>
-                <li className="nav-item p-1">
-                    <a 
-                        href = "#contact" 
-                        onClick={() => handlePageChange('Contact')}
-                        className={currentPage === 'Contact' ? 'nav-link custom-active' : 'nav-link'}
-                    >
-                        Contact Me
-                    </a>
-                </li>
-                <li className="nav-item p-1">
-                    <a 
-                        href = "#about" 
-                        onClick={() => handlePageChange('About')}
-                        className={currentPage === 'About' ? 'nav-link custom-active' : 'nav-link'}
-                    >
-                        About Me
-                    </a>
-                </li>
-                <li className="nav-item p-1">
-                    <a className="nav-link" href ={resume} target="_blank" rel="noreferrer">Resume</a>
-                </li>
-            </ul>
+            {dropdown ? (
+                <ul className="navbar-nav custom-align">
+                    <li className="nav-item p-1">
+                        <a 
+                            href = "#portfolio" 
+                            onClick={() => handlePageChange('Portfolio')}
+                            className={currentPage === 'Portfolio' ? 'nav-link custom-active' : 'nav-link'}
+                        >
+                            Projects
+                        </a>
+                    </li>
+                    <li className="nav-item p-1">
+                        <a 
+                            href = "#contact" 
+                            onClick={() => handlePageChange('Contact')}
+                            className={currentPage === 'Contact' ? 'nav-link custom-active' : 'nav-link'}
+                        >
+                            Contact Me
+                        </a>
+                    </li>
+                    <li className="nav-item p-1">
+                        <a 
+                            href = "#about" 
+                            onClick={() => handlePageChange('About')}
+                            className={currentPage === 'About' ? 'nav-link custom-active' : 'nav-link'}
+                        >
+                            About Me
+                        </a>
+                    </li>
+                    <li className="nav-item p-1">
+                        <a className="nav-link" href ={resume} target="_blank" rel="noreferrer">Resume</a>
+                    </li>
+                </ul>
             )
             : (
                 <></>
             )}
         </nav>
     )
+}
 }
