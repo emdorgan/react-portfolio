@@ -12,8 +12,15 @@ export default function Contact(){
     const [text, setText] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    const handleInputChange = (e) => {
+    // if the user cursor leaves the field without entering anything, set error message to 'required field!'
+    const leaveNotification = ({target}) => {
+        if(target.value === ""){
+            setErrorMessage("required field!")
+        }
+    }
 
+    const handleInputChange = (e) => {
+        setErrorMessage('');
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
@@ -64,6 +71,7 @@ export default function Contact(){
                         onChange={handleInputChange}
                         type="email"
                         placeholder="email"
+                        onMouseLeave={leaveNotification}
                     />
                     <input
                         value={name}
@@ -71,6 +79,7 @@ export default function Contact(){
                         onChange={handleInputChange}
                         type="name"
                         placeholder="name"
+                        onMouseLeave={leaveNotification}
                     />
                     <input
                         className="text-input-field"
@@ -79,6 +88,7 @@ export default function Contact(){
                         onChange={handleInputChange}
                         type="text"
                         placeholder="type your message here"
+                        onMouseLeave={leaveNotification}
                     />
                     <button className="btn btn-primary custom-btn" type="button" onClick={handleFormSubmit}>Submit</button>
                 </form>
