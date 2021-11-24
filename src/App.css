@@ -141,6 +141,23 @@ section article {
 .contact-me i {
   padding: 5px;
 }
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-left: 1%;
+}
+.custom-form input{
+  margin: 5px;
+  width: 200px;
+}
+.text-input-field {
+  height: 100px;
+}
+.custom-form button{
+  width: fit-content;
+}
 .about-me p {
   text-indent: 50px;
   padding: 30px 2% 30px 2%;

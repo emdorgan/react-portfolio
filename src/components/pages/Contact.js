@@ -54,9 +54,10 @@ export default function Contact(){
                     <li>Linkedin: <a href="https://www.linkedin.com/in/emily-dorgan/"><FaLinkedin /> https://www.linkedin.com/in/emily-dorgan/</a></li>
                     <li>Instagram: <a href="https://twitter.com/PrezMoocow"><FaTwitter/> https://twitter.com/PrezMoocow</a></li>
                 </ul>
+                <p>Alternatively, use this form</p>
             </article>
             <div>
-                <form className="form">
+                <form className="form custom-form">
                     <input
                         value={email}
                         name="email"
@@ -72,13 +73,14 @@ export default function Contact(){
                         placeholder="name"
                     />
                     <input
+                        className="text-input-field"
                         value={text}
                         name="text"
                         onChange={handleInputChange}
                         type="text"
-                        placeholder="text"
+                        placeholder="type your message here"
                     />
-                    <button type="button" onClick={handleFormSubmit}>Submit</button>
+                    <button className="btn btn-primary custom-btn" type="button" onClick={handleFormSubmit}>Submit</button>
                 </form>
                 {errorMessage && (
                     <div>
