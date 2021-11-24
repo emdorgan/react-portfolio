@@ -1,19 +1,15 @@
 # React Portfolio
 
-I'm picking the design I liked the most and making the portfolio in React.
-
-## To-do list
-
-* Make the dropdown menu only appear on smaller size (using state? is there a onscreenresize?)
-* Make it so when I click the nav links in the dropdown menu, it toggles it
-* Make footer appear at the bottom
-* make it so when user moves away from input field on contact form it tells user
+I picked the design I liked the most from my previous portfolio assignments and redesigned it in react! The components are all conditionally rendered, the current page is highlighted in pink in the nav, and the page is responsive to different viewports, with a nav that collapses into a drop-down menu. There is a contact form with some user validation, although it doesn't actually save the data entered.
 
 ## Deployed Link
 
-* [See Live Site]()
+* [See Live Site](https://emdorgan.github.io/react-portfolio)
 
 ## Screenshots
+
+![screenshot of projects](/screenshots/portfolio-1.png)
+![screenshot of contacts](/screenshots/portfolio-2.png)
 
 ## Built With
 
