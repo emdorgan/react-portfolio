@@ -72,7 +72,7 @@ export default function Contact(){
                         onChange={handleInputChange}
                         type="email"
                         placeholder="email"
-                        onMouseLeave={leaveNotification}
+                        onBlur={leaveNotification}
                     />
                     <input
                         value={name}
@@ -80,7 +80,7 @@ export default function Contact(){
                         onChange={handleInputChange}
                         type="name"
                         placeholder="name"
-                        onMouseLeave={leaveNotification}
+                        onBlur={leaveNotification}
                     />
                     <input
                         className="text-input-field"
@@ -89,7 +89,7 @@ export default function Contact(){
                         onChange={handleInputChange}
                         type="text"
                         placeholder="type your message here"
-                        onMouseLeave={leaveNotification}
+                        onBlur={leaveNotification}
                     />
                     <button className="btn btn-primary custom-btn" type="button" onClick={handleFormSubmit}>Submit</button>
                 </form>
