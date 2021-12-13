@@ -6,9 +6,17 @@ import techBlogImg from '../images/tech-blog.png'
 import weatherDashboardImg from '../images/weather-dashboard.png'
 import notesImg from '../images/notes.png'
 import quizImg from '../images/code-quiz.png'
+import catventureImg from '../images/catventure.png'
 
 // These will eventually be pulled from a database that I make when I convert this to a full-stack app
 const projects = [
+    {
+        title: "Catventure!",
+        description: "Recruit cats, level them up and fight in turn-based combat",
+        deployed: "https://catventure.herokuapp.com/",
+        repo: "https://github.com/emdorgan/catventure-game",
+        img: catventureImg
+    },
     {
         title: "Kitschy App",
         description: "Search recipies, save your favorites and compile a grocery list.",
