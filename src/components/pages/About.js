@@ -11,8 +11,8 @@ export default function About(){
             <article className="about-me">
                 <p>
                 I've always been a curious person and I have a strong love of learning new things, which is what brought me to the field of web development. Although my professional path has
-          taken some wild turns - most notably with the discovery that I am trans - I am now on track to pursue my dream career of developing attractive and interactive websites. I am
-          currently pursuing my education at UC Berkeley where I am learning Full Stack Web Development at a greatly accelerated pace.
+          taken some wild turns - most notably with the discovery that I am trans - I am now on track to pursue my dream career of developing attractive and interactive websites. I am currently looking for work
+          after having completed the Full Stack Web Development program at UC Berkeley.
                 </p>
                 <div className="picture-album">
                     <div className="picture-frame">
