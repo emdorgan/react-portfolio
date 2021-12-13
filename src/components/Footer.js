@@ -1,5 +1,5 @@
 import React from "react";
-import {FaGithub, FaEnvelope, FaLinkedin, FaTwitter, FaHeart} from 'react-icons/fa';
+import {FaGithub, FaEnvelope, FaLinkedin, FaHeart} from 'react-icons/fa';
 
 // renders the footer to appear on each page at the bottom of the document
 export default function Footer(){
@@ -9,7 +9,6 @@ export default function Footer(){
             <a href="https://mail.google.com/mail/u/0/?fs=1&to=wmdorgan@gmail.com&tf=cm"><FaEnvelope /></a>
             <a href="https://github.com/emdorgan"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/emily-dorgan/"><FaLinkedin /></a>
-            <a href="https://twitter.com/PrezMoocow"><FaTwitter/></a>
         </footer>
     )
 }
