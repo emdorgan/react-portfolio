@@ -150,6 +150,7 @@ section article {
 .about-me p {
   text-indent: 50px;
   padding: 30px 2% 30px 2%;
+  text-align: justify;
 }
 
 .picture-album {
@@ -162,7 +163,9 @@ section article {
 .picture-frame {
   max-width: 400px;
   max-height: 300px;
-  transform: rotate(-5deg);
+  bottom: 100px;
+  float: left;
+  margin: 10px;
 }
 
 .picture-frame img {
@@ -170,6 +173,8 @@ section article {
   height: auto;
   max-width: 400px;
   max-height: 300px;
+  border-radius: 5px;
+  border: 5px solid var(--mainSiteColor)
 }
 
 .nav-custom .custom-active, 
