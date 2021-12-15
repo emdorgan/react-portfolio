@@ -147,25 +147,25 @@ section article {
 .custom-form button{
   width: fit-content;
 }
-.about-me p {
+.about-me .me-text {
   text-indent: 50px;
   padding: 30px 2% 30px 2%;
   text-align: justify;
 }
 
-.picture-album {
+/* .picture-album {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
   flex-wrap: wrap;
-}
+} */
 
 .picture-frame {
   max-width: 400px;
   max-height: 300px;
   bottom: 100px;
   float: left;
-  margin: 10px;
+  margin: 15px;
 }
 
 .picture-frame img {
