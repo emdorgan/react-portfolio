@@ -8,7 +8,7 @@ import notesImg from '../images/notes.png'
 import quizImg from '../images/code-quiz.png'
 import catventureImg from '../images/catventure.png'
 
-// These will eventually be pulled from a database that I make when I convert this to a full-stack app
+
 const projects = [
     {
         title: "Catventure!",
