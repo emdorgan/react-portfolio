@@ -11,8 +11,8 @@ export default function Project(props){
                 <div className="card-body custom-card-body">
                     <h3 className="card-title">{props.project.title}</h3>
                     <p className="card-text">{props.project.description}</p>
-                    <a className="btn btn-primary custom-btn" href={props.project.deployed}>See Deployed</a>
-                    <a className="btn btn-primary custom-btn" href={props.project.repo}>See Repo</a>
+                    <a className="btn btn-primary custom-btn" href={props.project.deployed} target="_blank" rel="noreferrer">See Deployed</a>
+                    <a className="btn btn-primary custom-btn" href={props.project.repo} target="_blank" rel="noreferrer">See Repo</a>
                 </div>
             </div>
         </article>
