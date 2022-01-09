@@ -1,7 +1,5 @@
 import React from "react";
-import emily1 from '../images/emily1.jpg'
 import emily2 from '../images/emily2.jpg'
-import emily3 from '../images/emily3.jpg'
 
 // component for the About Me page
 export default function About(){
